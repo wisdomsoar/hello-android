@@ -1,0 +1,4 @@
+adb 查看Android版本号和SDK版本号
+阅读数 1万+
+
+﻿﻿获取系统版本：adbshellgetpropro.build.version.release
