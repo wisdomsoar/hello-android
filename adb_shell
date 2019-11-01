@@ -1,0 +1,4 @@
+list all installed packages in android adb shell
+pm list packages -f
+adb shell "pm list packages" |cut -f 2 -d ":"
+adb shell pm list packages | awk -F ":" '{print $2}'
