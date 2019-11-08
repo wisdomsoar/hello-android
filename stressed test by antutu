@@ -1,0 +1,41 @@
+
+
+https://github.com/ARM-software/workload-automation
+git clone https://github.com/ARM-software/workload-automation.git
+
+Installation
+https://workload-automation.readthedocs.io/en/latest/user_information.html#install
+
+download https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz?utm_source=androiddevtools&utm_medium=website
+or try
+wget http://dl.google.com/android/android-sdk_r24.2-linux.tgz 
+
+tar -xvf android-sdk_r24.2-linux.tgz
+
+Set ANDROID_HOME path
+    Open .bashrc file
+    nano ~/..bashrc
+    Put these lines in the end of file
+    export PATH=${PATH}:$HOME/android-sdk-linux/platform-tools:$HOME/android-sdk-linux/tools:$HOME/android-sdk-linux/build-tools
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+sudo apt update && sudo apt install android-sdk
+android update sdk
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+ref: https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/
+sudo apt install python3-pip
+
+sudo -H pip3 install wa
+or
+sudo -H pip install wa
+
+sudo -H python setup.py install
+
+sudo -H pip3 install wlauto
+or
+sudo -H pip install wlauto
+
+https://workload-automation.readthedocs.io/en/latest/user_information.html#list-command
+
+wa run antutu_tunning.yaml -d your_log_folder
