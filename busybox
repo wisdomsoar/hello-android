@@ -1,0 +1,9 @@
+
+busybox: don't use CLANG
+CLANG breaks all the things (especially busybox sh)
+ref: https://github.com/David-76/android_external_busybox/commit/55255d818b6c7fc6e2b36423468d36c16b619247
+
+
+
+branch-android-9.0
+https://github.com/David-76/android_external_busybox
