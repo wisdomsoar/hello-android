@@ -1,0 +1,13 @@
+https://android.googlesource.com/platform/build/+/master/README.md
+
+how to run a build
+https://android.googlesource.com/platform/build/+/master/Usage.txt
+  During a build, a few log files are generated in ${OUT} (or ${DIST_DIR}/logs
+    for dist builds):
+    verbose.log.gz
+      every command run, along with its outputs. This is similar to the
+      previous `m showcommands` option.
+    error.log
+      list of actions that failed during the build, and their outputs.
+    soong.log
+      verbose debug information from soong_ui
