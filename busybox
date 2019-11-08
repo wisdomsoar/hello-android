@@ -1,9 +1,20 @@
 
 busybox: don't use CLANG
+8 Mar 2017
 CLANG breaks all the things (especially busybox sh)
-ref: https://github.com/David-76/android_external_busybox/commit/55255d818b6c7fc6e2b36423468d36c16b619247
+https://github.com/David-76/android_external_busybox/commit/55255d818b6c7fc6e2b36423468d36c16b619247
 
+busybox: fix disable of clang
+31 Oct 2017
+David-76/android_external_busybox
+https://github.com/David-76/android_external_busybox/commit/59057b72dc1ab85012a60a04e2a5589b51b5f3a8
 
+BusyBox fork with fixes to allow compiling with Clang
+waweber/busybox-clang
+https://github.com/waweber/busybox-clang
+
+busybox-clang/examples/android-build
+https://github.com/waweber/busybox-clang/blob/master/examples/android-build
 
 branch-android-9.0
 https://github.com/David-76/android_external_busybox
