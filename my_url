@@ -1,3 +1,18 @@
 
 Android與汽車
 https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/506580/
+
+
+Android Q Changes
+ref: https://sx.ix5.org/info/post/android-q-changes/
+We’ve deprecated GCC during Android builds, we recommend clang for compilation.
+ccache is no longer supported by default, the prebuilt ccache exec has been removed.
+
+Android Q: Compiling Kernels in-tree
+ref: https://sx.ix5.org/info/post/android-q-compiling-kernels-in-tree/
+
+
+Update makefiles for Android Q and clang
+ref: https://github.com/ix5/kernel-sony/commit/6302f87e5ce1d9198707c42db9c502e0fe62f74b
+Clang version expected on Q is 9.0.6.
+
