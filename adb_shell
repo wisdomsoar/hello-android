@@ -2,3 +2,26 @@ list all installed packages in android adb shell
 pm list packages -f
 adb shell "pm list packages" |cut -f 2 -d ":"
 adb shell pm list packages | awk -F ":" '{print $2}'
+
+
+權限查詢
+ref: https://www.cnblogs.com/JianXu/p/5380882.html
+pm list permission-groups
+#打印所有已知的权限组
+
+pm list permissions [options] [GROUP]
+#打印权限
+
+To view a list of dangerous permissions, run the command:
+https://source.android.com/devices/tech/config/runtime_perms
+adb shell pm list permissions -g -d
+
+Manifest.permission
+ref: https://developer.android.com/reference/android/Manifest.permission.html
+
+授權
+pm grant video.player.videoplayer android.permission.WRITE_EXTERNAL_STORAGE
+pm grant video.player.videoplayer android.permission.READ_EXTERNAL_STORAGE
+
+Start App in adb shell
+am start -p video.player.videoplayer -a android.intent.action.VIEW -d "file:///system/etc/color_bars.mp4" -t "video/mp4"
