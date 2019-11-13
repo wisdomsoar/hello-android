@@ -25,3 +25,16 @@ pm grant video.player.videoplayer android.permission.READ_EXTERNAL_STORAGE
 
 Start App in adb shell
 am start -p video.player.videoplayer -a android.intent.action.VIEW -d "file:///system/etc/color_bars.mp4" -t "video/mp4"
+
+截圖
+ref: https://cuteparrot.pixnet.net/blog/post/190898697
+FOR /F "tokens=1-4 delims=:." %%a IN ("%time%") DO (
+SET _MyTime=%%a%%b%%c%%d
+)
+adb root
+adb remount
+adb shell screencap -p /sdcard/Download/s1.png
+adb pull /sdcard/Download/s1.png
+adb shell rm /sdcard/Download/s1.png
+REM every file have different name by time
+rename s1.png %_MyTime%.png
