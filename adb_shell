@@ -4,6 +4,11 @@ adb shell "pm list packages" |cut -f 2 -d ":"
 adb shell pm list packages | awk -F ":" '{print $2}'
 
 
+logcat
+-f <filename>	Write log message output to <filename>. The default is stdout.
+ref: https://developer.android.com/studio/command-line/logcat
+
+
 權限查詢
 ref: https://www.cnblogs.com/JianXu/p/5380882.html
 pm list permission-groups
