@@ -47,3 +47,14 @@ rename s1.png %_MyTime%.png
 
 
 android – 使用“su”命令时出错
+ref: https://codeday.me/bug/20190304/735526.html
+我尝试制作批处理文件来运行adb命令.我想使用su -c,但是我得到了错误：
+ su: invalid uid/gid '-c'. 
+我看到某个地方我的su版本不支持-c,我怎么能启用它？
+
+最佳答案
+在批处理文件中,它应该是这样的：
+adb shell "su 0 <command args>"
+例如：
+
+adb shell "su 0 mount -o rw,remount /system"
