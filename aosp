@@ -1,0 +1,10 @@
+
+USB config
+msm-4.14/arch/arm64/boot/dts/qcom$ vim -d sa8155-vm-usb.dtsi sm8150-usb.dtsi
+
+
+
+
+
+
+
