@@ -50,6 +50,9 @@ adb shell rm /sdcard/Download/s1.png
 REM every file have different name by time
 rename s1.png %_MyTime%.png
 
+抓frame buffer
+但是8155p抓出來全是NUL (why?)
+adb pull /dev/graphics/fb0 fb0
 
 
 android – 使用“su”命令时出错
