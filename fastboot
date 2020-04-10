@@ -1,0 +1,4 @@
+Can I change the Boot Slot from Fastboot with a command?
+ref: https://forum.xda-developers.com/oneplus-6t/help/change-boot-slot-fastboot-command-t3977207
+
+fastboot --set-active=a
