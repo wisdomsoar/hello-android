@@ -2,3 +2,20 @@ Can I change the Boot Slot from Fastboot with a command?
 ref: https://forum.xda-developers.com/oneplus-6t/help/change-boot-slot-fastboot-command-t3977207
 
 fastboot --set-active=a
+
+
+ref: https://tpu.thinkpower.com.tw/tpu/articleDetails/572
+電腦無法正確的驅動 Android 手機該怎麼辦?
+
+1. 若使用自己修改的Driver來安裝裝置，會因為沒有數位簽章的簽署，而導致在Windows 8/8.1/10上無法安裝(為了安全)，
+所以可以先到Windows的設定當中，透過進階啟動的調整，將要求驅動程式強制簽章的功能關閉。(以下用Windows 10作為設定調整的舉例)。
+
+2. 設定，備份(還原)，進階啟動>>立即重新啟動
+
+3. 等重開機
+
+4. 疑難排解>>進階選項>>啟動設定>>重新啟動
+
+5. 等再次開機
+
+6. 接著進入Windows系統後，就可以安裝自己變更的Driver。完成後，再重新開機之後這個設定就失效了，不用擔心。
