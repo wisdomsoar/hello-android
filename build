@@ -11,3 +11,8 @@ https://android.googlesource.com/platform/build/+/master/Usage.txt
       list of actions that failed during the build, and their outputs.
     soong.log
       verbose debug information from soong_ui
+      
+      
+      
+      
+LINUX\android\prebuilts\wxc\wxxc_android\obj\local\arm64-v8a
